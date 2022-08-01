@@ -37,7 +37,7 @@
     position: absolute;
     top: -8px;
     left: 15px;
-    padding: 0 8px;
+    padding: 2px 8px;
     font-size: 12px;
     background-color: $color-orange;
     font-weight: 600;
@@ -45,15 +45,18 @@
 
   &-button-wrapper {
     width: fit-content;
+    padding-left: 20px;
   }
 
   &-error {
     margin-top: 10px;
+    padding-left: 20px;
     color: $color-text-danger;
   }
 
   &-success {
     margin-top: 10px;
+    padding-left: 20px;
     color: $color-text-success;
   }
 
