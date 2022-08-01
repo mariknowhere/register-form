@@ -1,0 +1,68 @@
+@import "../../styles/variables";
+@import "src/client/styles/colors";
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: $block-max-width;
+  margin: 0 auto;
+  padding: 48px 0;
+
+  &-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px 100px;
+  }
+
+  &-message {
+    width: 100%;
+    height: 100%;
+    resize: none;
+    border: 1px solid $color-gray-30;
+    font-size: 18px;
+    padding: 10px;
+
+    &-wrapper {
+      width: 50%;
+      height: 50%;
+      margin-bottom: 20px;
+      position: relative;
+    }
+  }
+
+  &-label {
+    position: absolute;
+    top: -8px;
+    left: 15px;
+    padding: 0 8px;
+    font-size: 12px;
+    background-color: $color-orange;
+    font-weight: 600;
+  }
+
+  &-button-wrapper {
+    width: fit-content;
+  }
+
+  &-error {
+    margin-top: 10px;
+    color: $color-text-danger;
+  }
+
+  &-success {
+    margin-top: 10px;
+    color: $color-text-success;
+  }
+
+  &-loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 80px !important;
+    width: 100vw;
+    height: 100vh;
+  }
+}

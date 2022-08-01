@@ -1,0 +1,30 @@
+@import "src/client/styles/colors";
+
+::-webkit-calendar-picker-indicator {
+  width: 100%;
+  cursor: pointer;
+  opacity: 0;
+}
+
+.input {
+  width: 100%;
+  font-size: 17px;
+  line-height: 34px;
+  color: $color-black-20;
+  background-color: transparent;
+  border: 1px solid $color-gray-30;
+  border-radius: 4px;
+  box-shadow: none;
+  padding: 5px 0 5px 15px;
+
+  &-wrapper {
+    position: relative;
+  }
+
+  &-image {
+    position: absolute;
+    right: 0;
+    top: 6px;
+    pointer-events: none;
+  }
+}
