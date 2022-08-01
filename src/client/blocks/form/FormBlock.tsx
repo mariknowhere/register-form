@@ -58,7 +58,7 @@ const FormBlock: FC<IFormBlockProps> = ({
           textError={NAME_TEXT_ERROR}
           labelError={NAME_TEXT}
           isValueIncorrect={isNameIncorrect}
-          value={nameState}
+          value={nameState.toUpperCase()}
           onChange={onNameChangeHandler}
         />
         <FormInput
